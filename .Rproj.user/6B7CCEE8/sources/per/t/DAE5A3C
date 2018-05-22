@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1527020347445.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "488264167",
+    "id" : "DAE5A3C",
+    "lastKnownWriteTime" : 1527020459,
+    "last_content_update" : 1527020459600,
+    "path" : "~/Área de Trabalho/SOMs/ggsom/R/generate_som_result.R",
+    "project_path" : "R/generate_som_result.R",
+    "properties" : {
+        "cursorPosition" : "47,0",
+        "scrollLine" : "17",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

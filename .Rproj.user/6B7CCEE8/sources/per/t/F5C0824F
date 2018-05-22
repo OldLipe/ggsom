@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1527020420666.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3561814779",
+    "id" : "F5C0824F",
+    "lastKnownWriteTime" : 1527020430,
+    "last_content_update" : 1527020430279,
+    "path" : "~/Área de Trabalho/SOMs/ggsom/R/load_packages.R",
+    "project_path" : "R/load_packages.R",
+    "properties" : {
+        "cursorPosition" : "7,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

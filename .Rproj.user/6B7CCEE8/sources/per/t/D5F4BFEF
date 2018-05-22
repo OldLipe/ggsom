@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1527020369067.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2475620782",
+    "id" : "D5F4BFEF",
+    "lastKnownWriteTime" : 1527020473,
+    "last_content_update" : 1527020473058,
+    "path" : "~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R",
+    "project_path" : "R/visualize_data.R",
+    "properties" : {
+        "cursorPosition" : "33,0",
+        "scrollLine" : "3",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
