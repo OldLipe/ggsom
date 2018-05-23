@@ -1,7 +1,12 @@
 #' generate.model.som
+#
+#' @param model.som Object of SOM package
 #'
+#' @param cutree Boolean type to set a cluster visualization
 #'
+#' @param cutree.value amount of grid cluster
 #'
+#' @param grid.mark Boolean type to mark amout of neuron in each grid
 #'
 #'
 generate.model.result  <-function(model.som,cutree = FALSE,cutree.value = 0,grid.mark = FALSE){

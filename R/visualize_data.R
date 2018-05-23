@@ -18,7 +18,7 @@ visualize.cluster <- function(model.som.result,colour = FALSE){
   return(vis)
 }
 visualize.cluster.numbers <- function(model.som.result){
-  vis <- ggplot(model.som.result,  aes(var,values,group = id)) + geom_line() + geom_point() + facet_grid(y~x) + geom_text(aes(y=y,x=x,label=sum),x = 3.3, y=4.1) + theme_base() + theme(strip.background = element_blank(),strip.text = element_blank(),legend.position = "none",axis.title = element_blank(),axis.text = element_blank(),axis.ticks = element_blank())+ geom_rect(data = model.som.result,aes(fill=cluster),xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha=0.4)
+  vis <- ggplot(model.som,  aes(var,values,group = id))  + geom_rect(data = model.som,aes(fill=factor(cluster)),xmin = -Inf,xmax = Inf,ymin = -Inf,ymax = Inf,alpha=0.3) + geom_line()  + facet_grid(y~x) + geom_text(aes(y=y,x=x,label=sum),x = 3.3, y=4.1) + theme_base() + theme(strip.background = element_blank(),strip.text = element_blank(),legend.position = "none",axis.title = element_blank(),axis.text = element_blank(),axis.ticks = element_blank())
   return(vis)
 
 }
