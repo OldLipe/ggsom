@@ -1,3 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+<<<<<<< HEAD
 ^\.travis\.yml$
+=======
+>>>>>>> 6a6afdf63913651802fda719df7ef3ec721c0260

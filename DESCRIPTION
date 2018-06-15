@@ -6,6 +6,7 @@ Author: Felipe Carvalho
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
+<<<<<<< HEAD
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -14,3 +15,9 @@ Imports: ggplot2,
     tidyverse,
     kohonen,
     dplyr
+=======
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+>>>>>>> 6a6afdf63913651802fda719df7ef3ec721c0260
