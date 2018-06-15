@@ -6,6 +6,17 @@
 \usage{
 \method{sum}{unit.class}(model.som.values)
 }
+<<<<<<< HEAD
 \description{
 Sum of each grid of neuron
+=======
+\arguments{
+\item{model.som.values}{Model of values that is generate in generate.model.result}
+}
+\value{
+Sum of amount neurons per grid
+}
+\description{
+Sum of each grid the neuron
+>>>>>>> 1c72931ce5ec1eb22f533634deb833badbaa2030
 }

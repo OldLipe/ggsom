@@ -2,9 +2,23 @@
 % Please edit documentation in R/visualize_data.R
 \name{visualize.cluster}
 \alias{visualize.cluster}
+<<<<<<< HEAD
 \title{Visualize.cutree}
 \usage{
 visualize.cluster(model.som.result, colour = FALSE)
+=======
+\title{Visualize.cluster}
+\usage{
+visualize.cluster(model.som.result, factor = FALSE)
+}
+\arguments{
+\item{model.som.result}{Model of data plot}
+
+\item{factor}{Boolean data type to set a different colours in plot}
+}
+\value{
+ggplot visualization
+>>>>>>> 1c72931ce5ec1eb22f533634deb833badbaa2030
 }
 \description{
 Visualization of each cluster using cutree

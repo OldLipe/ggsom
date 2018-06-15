@@ -10,11 +10,22 @@ generate.model.result(model.som, cutree = FALSE, cutree.value = 0,
 \arguments{
 \item{model.som}{Object of SOM package}
 
+<<<<<<< HEAD
 \item{cutree}{Boolean type to set a cluster visualization}
 
 \item{cutree.value}{amount of grid cluster}
 
 \item{grid.mark}{Boolean type to mark amout of neuron in each grid}
+=======
+\item{cutree}{Boolean type to set of cluster visualization}
+
+\item{cutree.value}{Pieces of division grid}
+
+\item{grid.mark}{Boolean type to mark amount of neuron in each grid}
+}
+\value{
+Model data that is used in plots
+>>>>>>> 1c72931ce5ec1eb22f533634deb833badbaa2030
 }
 \description{
 generate.model.som
