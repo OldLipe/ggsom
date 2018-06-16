@@ -1,4 +1,4 @@
-[![Travis-CI Build Status](https://travis-ci.org/oldlipe/ggsom.svg?branch=master)](https://travis-ci.org/odlipe/ggsom)
+[![Travis-CI Build Status](https://travis-ci.org/OldLipe/ggsom.svg?branch=master)](https://travis-ci.org/OldLipe/ggsom/)
 
 # ggsom
 ggplot extension to visualize Soms data
