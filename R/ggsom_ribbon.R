@@ -11,7 +11,7 @@
 #' @return ggplot visualization
 #'
 #' @export
-ggsom_ribbon <- function(ggsom, color) {
+ggsom_ribbon <- function(ggsom, factor) {
   "%|C|%"(ggsom)
 
   ggplot(ggsom, aes(var, values, group = id)) +
@@ -21,7 +21,7 @@ ggsom_ribbon <- function(ggsom, color) {
       fill = cluster
     ), alpha = .5) +
     facet_grid(y ~ x) +
-    "%|SCALE|%" (color) +
+    "%|SCALE|%" (factor) +
     theme_few(10) +
     geom_text(
       aes(y = y, x = x, label = sum),

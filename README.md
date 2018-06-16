@@ -5,27 +5,27 @@ ggplot extension to visualize Soms data
 
 ## Installing Requirements
 ```r
-# Install the package
+
+# Easiest way to install this package
 devtools::install_github("oldlipe/ggsom")
 
+# Functions to train self-organising maps (SOMs)
 install.packages("kohonen")
 
 
 # The easiest way to get ggplot2 and dplyr is to install the whole tidyverse:
 install.packages("tidyverse")
 
-
-# The easiest way to get ggplot2 is to install the whole tidyverse:
-install.packages("tidyverse")
-
-install.packages("dplyr")
+# Themes for ggplot2
 install.packages("ggthemes")
 ```
-## Usage
+## Example of SOMs object
 
 ```r
+library (RCurl)
 
-NBA <-  read.csv(text = getURL("https://raw.githubusercontent.com/clarkdatalabs/soms/master/NBA_2016_player_stats_cleaned.csv"), sep = ",", header = T, check.names = FALSE) 
+NBA <- read.csv(text = getURL("https://raw.githubusercontent.com/clarkdatalabs/soms/master/NBA_2016_player_stats_cleaned.csv"), sep = ",", header = T, check.names = FALSE) 
+
 
 # Chosing columns
 NBA.measures1 = c("FTA", "2PA", "3PA")
@@ -35,32 +35,33 @@ nba.som <- som(scale(NBA[NBA.measures1]), grid = somgrid(6, 4, "rectangular"))
 
 
 ```
-- Full code can be find [here](https://clarkdatalabs.github.io/soms/SOM_NBA)
-
-## Build the model used in plot function
-```r
-
-model.som <- generate.model.result(nba.som,
-                                   cutree_value = 2)
-
-model.som <- generate.model.result(nba.som,cutree=TRUE,
-                                   cutree.value = 2,
-                                   grid.mark = TRUE)
+- Full code can be found [here](https://clarkdatalabs.github.io/soms/SOM_NBA)
 
 
-```
-## Examples of plot
+## Examples of ggsom_line
 
 ```r
-  # Division with numbers of neuron in each grid
-  visualize.cluster.numbers(model.som)
+  # Set FALSE for a colorless chart
+  ggsom_line(aes_som(nba.som), FALSE)
 
 ```
-![](img/cluster_img_factor.png)
+![](img/ggsom_line_colorless.jpeg)
 
 ```r
-  # Amount of neuron per grid with color
-  visualize.numbers(model.som,colour=TRUE)
+  # TRUE for a color chart
+  ggsom_line(aes_som(nba.som), TRUE)
 ```
-![](img/numbers_with_colour.png)
+![](img/ggsom_line_color.jpeg)
+
+
+
+## Examples of division clusters plots
+
+```r
+  # Division grid per colors 
+  ggsom_ribbon(aes_som(nba.som, 4), TRUE)
+  
+
+```
+![](img/ggsom_ribbon.jpeg)
 
