@@ -2,7 +2,7 @@
 #'
 #' @param ggsom Model of data plot
 #'
-#' @param color Boolean type to add color on plot
+#' @param factor Boolean type to add color on plot
 #'
 #' @example
 #'
