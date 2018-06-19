@@ -2,13 +2,11 @@
 #'
 #' Visualization that is contains amount of neuron per grid with color based on classes
 #'
+#' @import ggplot2
+#'
 #' @param ggsom Model of data plot
 #'
 #' @param color Boolean to change color of the edges
-#'
-#' @example
-#'
-#' plot_ggsom_line_point_colour(aes_som(model_som), TRUE)
 #'
 #' @return ggplot visualization
 #'

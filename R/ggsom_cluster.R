@@ -4,12 +4,6 @@
 #'
 #' @param text Boolean type to viasualize numbers of neurons per grid
 #'
-#' @example
-#'
-#' ggsom_rect(aes_som(model_som, 2), TRUE)
-#'
-#' ggsom_rect(aes_som(model_som, 2), FALSE)
-#'
 #' @return ggplot visualization
 #'
 #' @export

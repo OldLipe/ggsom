@@ -4,11 +4,11 @@
 #'
 #' @param cutree.value number of division grid
 #'
-#' @example
-#'
-#' aes_som(model_som, 2)
+#' @import tidyverse
 #'
 #' @return Model data that is used in plots
+#'
+#' @export
 aes_som <- function(model_som,
                     cutree_value = 0) {
   cutree <- TRUE

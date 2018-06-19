@@ -4,10 +4,6 @@
 #'
 #' @param color Boolean type to add color on plot
 #'
-#' @example
-#'
-#' ggsom_ribbon_color(aes_som(model_som, cutree_value = 2))
-#'
 #' @return ggplot visualization
 #'
 #' @export

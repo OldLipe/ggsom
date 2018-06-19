@@ -2,9 +2,9 @@
 % Please edit documentation in R/aes_som.R
 \name{aes_som}
 \alias{aes_som}
-\title{aes_som}
+\title{aesthetics data of som object}
 \usage{
-aes_som(model_som, cutree.value = 0)
+aes_som(model_som, cutree_value = 0)
 }
 \arguments{
 \item{model_som}{object of SOM package}
@@ -15,5 +15,5 @@ aes_som(model_som, cutree.value = 0)
 Model data that is used in plots
 }
 \description{
-aes_som
+aesthetics data of som object
 }

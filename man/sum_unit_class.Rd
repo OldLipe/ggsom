@@ -4,7 +4,7 @@
 \alias{sum_unit_class}
 \title{sum_unit_class}
 \usage{
-sum_unit_class(model.som.values)
+sum_unit_class(model_som_values)
 }
 \arguments{
 \item{model.som.values}{Model of values that is generate in generate.model.result}

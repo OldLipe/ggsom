@@ -10,16 +10,14 @@ devtools::install_github("oldlipe/ggsom")
 
 install.packages("kohonen")
 
-<<<<<<< HEAD
 # The easiest way to get ggplot2 and dplyr is to install the whole tidyverse:
 install.packages("tidyverse")
 
 =======
-# The easiest way to get ggplot2 is to install the whole tidyverse:
+# The easiest way to get ggplot2 and dplyr is to install the whole tidyverse:
 install.packages("tidyverse")
 
-install.packages("dplyr")
->>>>>>> 1c72931ce5ec1eb22f533634deb833badbaa2030
+
 install.packages("ggthemes")
 ```
 ## Usage
@@ -40,14 +38,14 @@ nba.som <- som(scale(NBA[NBA.measures1]), grid = somgrid(6, 4, "rectangular"))
 
 ## Build the model used in plot function
 ```r
-<<<<<<< HEAD
+
 model.som <- generate.model.result(nba.som,
                                    cutree_value = 2)
 =======
 model.som <- generate.model.result(nba.som,cutree=TRUE,
                                    cutree.value = 2,
                                    grid.mark = TRUE)
->>>>>>> 1c72931ce5ec1eb22f533634deb833badbaa2030
+
 
 ```
 ## Examples of plot
