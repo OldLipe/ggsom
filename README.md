@@ -8,12 +8,13 @@ ggplot extension to visualize Soms data
 # Install the package
 devtools::install_github("oldlipe/ggsom")
 
+# Soms package
 install.packages("kohonen")
 
 # The easiest way to get ggplot2 and dplyr is to install the whole tidyverse:
 install.packages("tidyverse")
 
-=======
+
 # The easiest way to get ggplot2 and dplyr is to install the whole tidyverse:
 install.packages("tidyverse")
 
@@ -41,7 +42,7 @@ nba.som <- som(scale(NBA[NBA.measures1]), grid = somgrid(6, 4, "rectangular"))
 
 model.som <- generate.model.result(nba.som,
                                    cutree_value = 2)
-=======
+
 model.som <- generate.model.result(nba.som,cutree=TRUE,
                                    cutree.value = 2,
                                    grid.mark = TRUE)

@@ -1,0 +1,512 @@
+dado <- function(){
+if (valor){
+sprintf("Verdadeiro")
+}
+}
+}
+teste()
+teste
+teste()
+teste_teste <- teste()
+teste_teste()
+formals(teste_teste)
+teste_teste <- teste(TRUE, 2)
+formals(teste_teste)
+formals(teste)
+teste <- function(valor=TRUE, v = 1){
+if (valor){
+sprintf("Verdadeiro")
+}
+}
+formalArgs(teste)
+`formals<-`(teste())
+`formals<-`(teste
+`formals<-`(teste)
+`formals<-`(teste(valor=TRUE, v = 2))
+formals(teste(TRUE, 1))
+testado <- teste(TRUE, 1)
+testado
+formals(testado)
+formals(teste)
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+plot_ggsom(model.som, cluster = TRUE, cluster_numbers = 2)
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+plot_ggsom(model.som, cluster = TRUE, cluster_numbers = 2)
+teste_plot <- plot_ggsom(model.som, cluster = TRUE, cluster_numbers = 2)
+teste_plot()
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+teste_plot()
+teste_plot <- plot_ggsom(model.som, cluster = TRUE, cluster_numbers = 2)
+teste_plot
+teste_plot()
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+teste_plot <- plot_ggsom(model.som, cluster = TRUE, cluster_numbers = 2)
+teste_plot()
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+teste_plot <- plot_ggsom(nba.som, cluster = TRUE, cluster_numbers = 2)
+teste_plot()
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste_plot <- plot_ggsom(nba.som, cluster = TRUE, cluster_numbers = 2)
+teste_plot()
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste_plot <- plot_ggsom(nba.som, cluster = TRUE, cluster_numbers = 2)
+teste_plot <- plot_ggsom(nba.som, TRUE, 2)
+teste_plot()
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste_plot <- plot_ggsom(nba.som, TRUE, 2)
+teste_plot()
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste_plot <- plot_ggsom(nba.som, TRUE, 2)
+teste_plot()
+teste1 <- teste_plot()
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line(ggsom(
+nba.som,
+TRUE,
+2
+))
+plot_ggsom_grid(ggsom(
+nba.som,
+TRUE,
+2
+))
+plot_ggsom_grid(ggsom(
+nba.som,
+TRUE,
+2
+))
+plot_ggsom_line_grid(ggsom(
+nba.som,
+TRUE,
+2
+))
+plot_ggsom_line(ggsom(
+nba.som
+))
+teste <- ggsom(
+nba.som,
+TRUE,
+)
+teste <- ggsom(
+nba.som,
+TRUE,
+2)
+teste$cluster
+teste <- ggsom(nba.som)
+teste
+"cluster" %in% teste
+teste <- ggsom(
+nba.som,
+TRUE,
+2)
+"cluster" %in% teste
+teste
+colnames()
+colnames(teste)
+"cluster" %in% colnames(teste)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_points.R')
+plot_ggsom_points(
+nba.som
+)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_points.R')
+plot_ggsom_points(
+nba.som
+)
+plot_ggsom_points(ggsom(
+nba.som
+)
+plot_ggsom_points(ggsom(
+nba.som
+))
+plot_ggsom_points(model.som)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+teste <- ggsom(nba.som)
+teste
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point(teste)
+teste
+nrows(teste)
+nrow(teste)
+nrow(model.som)
+teste <- ggsom(model.som)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+teste <- ggsom(model.som)
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste <- ggsom(model.som)
+teste <- ggsom(nba.som)
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste <- aes_som(nba.som)
+teste
+View(teste)
+View(model.som)
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste <- aes_som(nba.som)
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste <- aes_som(nba.som)
+plot_ggsom_line_point(teste)
+plot_ggsom_line_point(model.som)
+plot_ggsom_line_point(teste)
+plot_ggsom_line_point(teste)
+plot_ggsom_line_point(model.som)
+plot_ggsom_line_point(teste)
+plot_ggsom_line_point(model.som)
+plot_ggsom_line_point_colour(teste)
+plot_ggsom_line_point_colour(model.som)
+plot_ggsom_line_point_colour(teste)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+plot_ggsom_cluster_line(teste)
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+plot_ggsom_cluster_line(teste)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+teste <- aes_som(nba.som)
+teste
+teste <- aes_som(nba.som, 2)
+teste
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste <- aes_som(nba.som, 2)
+teste
+source('~/Área de Trabalho/SOMs/ggsom/R/visualize_data.R')
+teste <- aes_som(nba.som, 2)
+teste
+teste <- aes_som(nba.som)
+teste
+teste
+plot_ggsom_cluster_line(teste)
+plot_ggsom_cluster_line(aes_som(
+nba.som,2
+))
+plot_ggsom_cluster_ribbon(aes_som(
+nba.som,2
+))
+plot_ggsom_cluster_ribbon(aes_som(
+nba.som,2
+))
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+plot_ggsom_cluster_ribbon(aes_som(
+nba.som,2
+))
+plot_ggsom_cluster_factor(aes_som(
+nba.som,2
+))
+plot_ggsom_linep(aes_som(nba.som,
+2))
+devtools::as.package()
+devtools::as.package(".")
+devtools::document()
+devtools::lint()
+devtools::lint()
+environment()
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_ribbon.R')
+ggsom_ribbon_color(model.som,  TRUE)
+library(ggplot2)
+ggsom_ribbon_color(model.som,  TRUE)
+library(ggthemes)
+ggsom_ribbon_color(model.som,  TRUE)
+ggsom_ribbon_color(model.som,  FALSE)
+ggsom_ribbon_color(model.som,  FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+model.som
+plot_ggsom_line_point(model.som)
+plot_ggsom_line_point_colour(model.som)
+"%|COLOR|%" <- function(color){
+return(aes(colour))
+}
+"%|COLOR|%" <- function(color){
+if (color){
+return(aes(colour))
+}
+}
+teste <- "%|COLOR|%" (TRUE)
+teste
+teste = teste
+teste <- teste = teste
+"%|COLOR|%" <- function(color, variable){
+if (color){
+return(aes(colour = variable))
+}
+}
+teste <- "%|COLOR|%" (TRUE)
+teste
+"%|COLOR|%" <- function(color, variable){
+if (color){
+return(ggplot2::aes(colour = variable))
+}
+}
+teste <- "%|COLOR|%" (TRUE)
+teste
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+"%|COLOR|%"(TRUE, 1)
+"%|COLOR|%"(FALSE, 1)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point_colour(model.som, FALSE)
+"%|COLOR|%" <- function(color, variable){
+if (color){
+return(variable)
+}
+"%|COLOR|%"(TRUE, 2)
+"%|COLOR|%" (TRUE, 2)
+"%|COLOR|%" (FALSE, 2)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+"%|COLOR|%" (FALSE, 2)
+"%|COLOR|%" (FALSE, 2)
+"%|COLOR|%" (FALSE, 2)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+teste <- colour = valor
+teste <- colour = 2
+teste <<- colour = 2
+teste <<- 2
+teste
+is.bool
+class(TRUE)
+is.logical(TRUE[])
+is.logical(TRU)
+is.logical(2)
+is.logical("2")
+is.logical(1.1)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+library(tidyselect)
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+plot_ggsom_line_point_colour(model.som, NULL)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, NULL)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point_colour(model.som, FALSe)
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+class(NULL)
+type(NULL)
+typeof(NULL)
+teste <- class("NULL")
+teste
+teste <- class(NULL)
+teste
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+plot_ggsom_line_point_colour(model.som, TRUE)
+teste
+class(teste)
+teste <- typeof(NULL)
+teste
+typeof(teste)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point_colour(model.som, FALSE)
+as.null(teste)
+teste
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+x <- NULL
+x
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+plot_ggsom_line_point_colour(model.som, FALSE)
+plot_ggsom_line_point_colour(model.som, TRUE)
+plot_ggsom_line_point(model.som)
+plot_ggsom_line_point_colour(model.som, FALSE)
+plot_ggsom_line_point(model.som)
+plot_ggsom_line_point_colour(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+model.som
+ggsom_rect(model.so,)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+ggsom_rect(model.som)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+ggsom_rect(model.som)
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+ggsom_rect(model.som)
+ggsom_rect(model.som, FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/aes_som.R')
+NBA <-  read.csv(text = getURL("https://raw.githubusercontent.com/clarkdatalabs/soms/master/NBA_2016_player_stats_cleaned.csv"), sep = ",", header = T, check.names = FALSE)
+library(RCurl)
+NBA <-  read.csv(text = getURL("https://raw.githubusercontent.com/clarkdatalabs/soms/master/NBA_2016_player_stats_cleaned.csv"), sep = ",", header = T, check.names = FALSE)
+NBA
+View(NBA)
+NBA.measures1 = c("FTA", "2PA", "3PA")
+nba.som <- som(scale(NBA[NBA.measures1]), grid = somgrid(6, 4, "rectangular"))
+library(kohonen)
+devtools::document()
+devtools::document(".")
+nba.som <- som(scale(NBA[NBA.measures1]), grid = somgrid(6, 4, "rectangular"))
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+ggsom_rect(aes_som(nba.som))
+source('~/Área de Trabalho/SOMs/ggsom/R/utils.R')
+ggsom_rect(aes_som(nba.som))
+library(tidyselect)
+library(tidyverse)
+ggsom_rect(aes_som(nba.som))
+source('~/Área de Trabalho/SOMs/ggsom/R/aes_som.R')
+rm(aes_som)
+ggsom_rect(aes_som(nba.som))
+source('~/Área de Trabalho/SOMs/ggsom/R/aes_som.R')
+ggsom_rect(aes_som(nba.som))
+ggsom_rect(aes_som(nba.som, 2))
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_cluster.R')
+ggsom_rect(aes_som(nba.som, 2))
+ggsom_rect(aes_som(nba.som))
+ggsom_rect(aes_som(nba.som, 2), FALSE)
+ggsom_rect(aes_som(nba.som, 3), TRUE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_line.R')
+ggsom_line(aes_som(nba.som), TRUE)
+ggsom_line(aes_som(nba.som, TRUE))
+ggsom_line(aes_som(nba.som), FALSE)
+source('~/Área de Trabalho/SOMs/ggsom/R/ggsom_ribbon.R')
+ggsom_ribbon(aes_som(nba.som, 2), TRUE)
+ggsom_ribbon(aes_som(nba.som, 2), FALSE)
+ggsom_ribbon(aes_som(nba.som, 2), FALSE)
+devtools::as.package()
+devtools::as.package(".")
+devtools::build_vignettes(".")
+devtools::document()
+devto
+devtools::document()
+devtools::document()
+devtools::document()
+devtools::document()
+devtools::document()
+devo
+devtools::document()
+devtools::document()
+devtools::use_vignette(".")
+devtools::document()
+devtools::as.package(".")
+devtools::load_all(".")
+devtools::is.package(".")
+devtools::install(".")
