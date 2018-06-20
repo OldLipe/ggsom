@@ -35,6 +35,7 @@ aes_som <- function(model_som,
 
   # joining the model of points  of model of values by unit.class column
   if (cutree && cutree_value > 0) {
+    # Hierarchical cluster analysis
     model_som_pts$cluster <-
       cutree(hclust(dist(model_som$codes[[1]])), cutree_value)
     model_som_result <-
