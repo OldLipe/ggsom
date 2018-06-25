@@ -7,9 +7,9 @@
 aes_som(model_som, cutree_value = 0)
 }
 \arguments{
-\item{model_som}{object of SOM package}
+\item{model_som}{object of self-organising maps (SOMs) package}
 
-\item{cutree.value}{number of division grid}
+\item{cutree_values}{numbers of divisions per grid}
 }
 \value{
 Model data that is used in plots

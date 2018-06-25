@@ -7,7 +7,7 @@
 sum_unit_class(model_som_values)
 }
 \arguments{
-\item{model.som.values}{Model of values that is generate in generate.model.result}
+\item{model_som_values}{Model of values that is generate in generate.model.result}
 }
 \value{
 Sum of amount neurons per grid
