@@ -4,7 +4,7 @@
 \alias{aes_som}
 \title{aesthetics data of som object}
 \usage{
-aes_som(model_som, cutree_value = 0)
+aes_som(model_som, ...)
 }
 \arguments{
 \item{model_som}{object of self-organising maps (SOMs) package}

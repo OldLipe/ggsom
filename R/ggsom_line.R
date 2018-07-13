@@ -4,6 +4,8 @@
 #'
 #' @import ggplot2
 #'
+#' @import ggthemes
+#'
 #' @param ggsom Model of data plot
 #'
 #' @param color Boolean to change color of the edges
@@ -16,7 +18,7 @@ ggsom_line <- function(aes_som, color) {
     geom_line() +
     geom_point() +
     facet_grid(y ~ x) +
-    geom_text(aes(y = y, x = x, label = sum), x = 3.2, y = 4.1) +
+    geom_text(aes(y = y, x = x, label = sum), x = 3.0, y = 4.8) +
     theme_base() +
     theme(
       strip.background = element_blank(),
@@ -27,3 +29,6 @@ ggsom_line <- function(aes_som, color) {
       axis.ticks = element_blank()
     )
 }
+
+
+

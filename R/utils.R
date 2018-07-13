@@ -19,6 +19,7 @@ is.kohonen <- function(x)
   inherits(x, "kohonen")
 
 
+
 "%|C|%" <- function(x) {
   if (!is.cluster(x))
     stop("To view plot cluster method need to set number of clusters.",
@@ -37,13 +38,30 @@ is.cluster <- function(x)
   }
 }
 
-"%|COLOR|%" <- function(color, aes_som) {
-  if (color) {
-    p <- ggplot(aes_som, aes(var, values, group = id, colour = var))
+"%|CUTREE|%" <- function(list_params) {
+  if ("cutree_value" %in% names(list_params) &&
+      list_params$cutree_value > 0) {
+    return(TRUE)
   } else {
-    p <- ggplot(aes_som, aes(var, values, group = id))
+    return(FALSE)
   }
-  return(p)
+
+}
+
+# checks for colors on the plot
+"%|COLOR|%" <- function(color, aes_som){
+    ifelse(color, ggplot(aes_som, aes(var,
+      values,
+      group = id,
+      colour = var)), ggplot(aes_som, aes(var,
+                                          values,
+                                          group = id)))
+  }
+"%|CLUSTER|%" <- function(model_som) {
+  if ("cluster" %in% names(model_som)) {
+    return(TRUE)
+  }
+  return(FALSE)
 }
 
 

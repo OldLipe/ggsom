@@ -4,6 +4,10 @@
 #'
 #' @param color Boolean type to add color on plot
 #'
+#' @import ggthemes
+#'
+#' @import ggplot2
+#'
 #' @return ggplot visualization
 #'
 #' @export

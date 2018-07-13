@@ -7,13 +7,12 @@
 #' @import tidyverse
 #'
 #' @return Model data that is used in plots
-aes_som <- function(model_som,
-                    cutree_value = 0) {
-  cutree <- TRUE
+aes_som <- function(model_som, ...) {
+  params <- list(...)
 
   # Check if the variable is a SOMs object
   "%|K|%" (model_som)
-
+  #browser()
   # Creating a data frame from the SOMs object
   model_som_values <-
     data.frame(
@@ -26,29 +25,24 @@ aes_som <- function(model_som,
   model_som_pts <- as.data.frame(model_som$grid$pts)
   model_som_pts$unit.class <- c(1:nrow(model_som$grid$pts))
   model_som_pts <-
-    left_join(model_som_pts, sum_unit_class(model_som_values), by = "unit.class")
+    dplyr::left_join(model_som_pts, sum_unit_class(model_som_values), by = "unit.class")
 
   # Set 0 to NA values
-  model_som_pts$sum <- replace_na(model_som_pts$sum, 0)
+  model_som_pts$sum <- tidyr::replace_na(model_som_pts$sum, 0)
+
 
   # Verifies if number of divisions is greater than 0
-  if (cutree && cutree_value > 0) {
+  #if (cutree && cutree_value > 0) {
     # Using hierarchical clustering as a cluster analysis method
+  if ("%|CUTREE|%"(params)){
     model_som_pts$cluster <-
-      cutree(hclust(dist(model_som$codes[[1]])), cutree_value)
-
-    model_result <-
-      left_join(model_som_values, model_som_pts, by = "unit.class") %>%
-      gather(var, values, -id, -unit.class, -cluster,-sum, -x, -y)
-
-    return(model_result)
-  } else {
-    model_result <-
-      left_join(model_som_values, model_som_pts, by = "unit.class") %>%
-      gather(var, values, -id, -unit.class, -sum, -x, -y)
-
-    return(model_result)
+      cutree(hclust(dist(model_som$codes[[1]])), params$cutree_value)
   }
+
+  model_result <-
+    dplyr::left_join(model_som_values, model_som_pts, by = "unit.class") %>%
+      generate_model()
+
 }
 
 #' sum_unit_class
@@ -70,4 +64,12 @@ sum_unit_class <- function(model_som_values) {
              filter (model_som_values, unit.class == as.character(value)) %>% nrow()))
 
   return(value_result)
+}
+
+generate_model <- function(model_result){
+  if ("%|CLUSTER|%"(model_result)){
+    tidyr::gather(model_result, var, values, -id, -unit.class, -cluster, -sum, -x, -y)
+  } else {
+    tidyr::gather(model_result, var, values, -id, -unit.class, -sum, -x, -y)
+  }
 }
