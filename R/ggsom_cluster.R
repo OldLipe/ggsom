@@ -4,6 +4,10 @@
 #'
 #' @param text Boolean type to viasualize numbers of neurons per grid
 #'
+#' @import ggplot2
+#'
+#' @import ggthemes
+#'
 #' @return ggplot visualization
 #'
 #' @export

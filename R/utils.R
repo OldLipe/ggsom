@@ -39,29 +39,28 @@ is.cluster <- function(x)
 }
 
 "%|CUTREE|%" <- function(list_params) {
-  if ("cutree_value" %in% names(list_params) &&
-      list_params$cutree_value > 0) {
-    return(TRUE)
-  } else {
-    return(FALSE)
-  }
-
+  ifelse ("cutree_value" %in% names(list_params) &&
+            list_params$cutree_value > 0,
+          TRUE,
+          FALSE)
 }
 
 # checks for colors on the plot
-"%|COLOR|%" <- function(color, aes_som){
-    ifelse(color, ggplot(aes_som, aes(var,
-      values,
-      group = id,
-      colour = var)), ggplot(aes_som, aes(var,
-                                          values,
-                                          group = id)))
-  }
+"%|COLOR|%" <- function(color, aes_som) {
+  ifelse(color, return(ggplot(
+    aes_som, aes(var,
+                 values,
+                 group = id,
+                 colour = var)
+  )), return(ggplot(aes_som, aes(
+    var,
+    values,
+    group = id
+  ))))
+}
 "%|CLUSTER|%" <- function(model_som) {
-  if ("cluster" %in% names(model_som)) {
-    return(TRUE)
-  }
-  return(FALSE)
+  ifelse ("cluster" %in% names(model_som), TRUE, FALSE)
+
 }
 
 
