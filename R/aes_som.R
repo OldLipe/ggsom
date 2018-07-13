@@ -8,6 +8,10 @@
 #'
 #' @import kohonen
 #'
+#' @import dplyr
+#'
+#' @import tidyr
+#'
 #' @return Model data that is used in plots
 aes_som <- function(model_som, ...) {
   params <- list(...)
@@ -61,7 +65,7 @@ sum_unit_class <- function(model_som_values) {
     sapply(value_result$unit.class,
            (
              function(value)
-               filter (model_som_values, unit.class == as.character(value)) %>% nrow()
+               dplyr::filter (model_som_values, unit.class == as.character(value)) %>% nrow()
            ))
 
   return(value_result)
