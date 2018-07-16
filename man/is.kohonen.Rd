@@ -6,9 +6,14 @@
 \usage{
 is.kohonen(x)
 }
+\arguments{
+\item{x}{Dataframe
+
+This is used by aes_som to simplify comparison between objects}
+}
 \value{
 if object inherits kohonen class return TRUE otherwise stop
 }
 \description{
-This is used by aes_som to simplify comparison between objects
+Check if the object is inherits of kohonen
 }

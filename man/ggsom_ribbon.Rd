@@ -2,12 +2,12 @@
 % Please edit documentation in R/ggsom_ribbon.R
 \name{ggsom_ribbon}
 \alias{ggsom_ribbon}
-\title{Cluster plot using geom ribbon with color}
+\title{ggsom_ribbon}
 \usage{
-ggsom_ribbon(ggsom, color)
+ggsom_ribbon(aes_som, color)
 }
 \arguments{
-\item{ggsom}{Model of data plot}
+\item{aes_som}{Function aes_som for input data on plot}
 
 \item{color}{Boolean type to add color on plot}
 }
@@ -16,4 +16,17 @@ ggplot visualization
 }
 \description{
 Cluster plot using geom ribbon with color
+}
+\examples{
+
+\dontrun{
+library(ggthemes)
+library(ggsom)
+library(ggplot2)
+
+iris_som <- som(scale(iris[1:4]), grid = somgrid(6, 4, "rectangular"))
+
+ggsom_ribbon(aes_som(iris_som, cutree_value = 3), FALSE)
+}
+
 }

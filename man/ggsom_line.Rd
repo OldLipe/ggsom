@@ -2,18 +2,31 @@
 % Please edit documentation in R/ggsom_line.R
 \name{ggsom_line}
 \alias{ggsom_line}
-\title{plot_ggsom_line_point_colour}
+\title{ggsom_line}
 \usage{
 ggsom_line(aes_som, color)
 }
 \arguments{
-\item{color}{Boolean to change color of the edges}
+\item{aes_som}{Function aes_som for input data on plot}
 
-\item{ggsom}{Model of data plot}
+\item{color}{Boolean to change color of the edges}
 }
 \value{
 ggplot visualization
 }
 \description{
 Visualization that is contains amount of neuron per grid with color based on classes
+}
+\examples{
+
+\dontrun{
+library(ggthemes)
+library(ggsom)
+library(ggplot2)
+
+iris_som <- som(scale(iris[1:4]), grid = somgrid(6, 4, "rectangular"))
+
+ggsom_line(aes_som(iris_som), TRUE)
+}
+
 }

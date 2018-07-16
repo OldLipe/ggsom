@@ -12,6 +12,8 @@
 
 #' Check if the object is inherits of kohonen
 #'
+#' @param x Dataframe
+#'
 #' This is used by aes_som to simplify comparison between objects
 #'
 #' @return if object inherits kohonen class return TRUE otherwise stop
@@ -28,15 +30,19 @@ is.kohonen <- function(x)
 
 #' Check if the parameter has a cluster column
 #'
+#' @param x Dataframe
+#'
 #' @return TRUE if cluster in data frame otherwise FALSE
 is.cluster <- function(x)
   "cluster" %in% colnames(x)
+
 
 "%|SCALE|%" <- function(color = FALSE) {
   if (color) {
     scale_fill_gradient(low = "#3498db", high = "#c0392b")
   }
 }
+
 
 "%|CUTREE|%" <- function(list_params) {
   ifelse ("cutree_value" %in% names(list_params) &&
@@ -45,30 +51,42 @@ is.cluster <- function(x)
           FALSE)
 }
 
-# checks for colors on the plot
-"%|COLOR|%" <- function(color, aes_som) {
+
+#' aes_color
+#'
+#' Function that return the base plot with or without color
+#'
+#' @param aes_som Function aes_som for input data on plot
+#'
+#' @param color Boolean type to adding color on plot
+#'
+#' @return Base plot
+aes_color <- function(color, aes_som) {
   ifelse(color, return(ggplot(
-    aes_som, aes(var,
-                 values,
-                 group = id,
-                 colour = var)
+    aes(
+      aes_som$var,
+      aes_som$values,
+      group = aes_som$id,
+      colour = aes_som$var,
+      data = aes_som
+    )
   )), return(ggplot(aes_som, aes(
-    var,
-    values,
-    group = id
+    aes_som$var,
+    aes_som$values,
+    group = aes_som$id
   ))))
 }
+
 "%|CLUSTER|%" <- function(model_som) {
   ifelse ("cluster" %in% names(model_som), TRUE, FALSE)
 
 }
 
-
-"%|TEXT|%" <- function(text) {
-  if (text) {
-    t  <- geom_text(aes(y = y,
-                        x = x,
-                        label = sum), x = 2.9, y = 4.1)
+"%|TEXT|%" <- function(a = TRUE, aes_som) {
+  if (a) {
+    t  <- geom_text(aes(y = aes_som$y,
+                        x = aes_som$x,
+                        label = aes_som$sum), x = 2.9, y = 4.1)
     return(t)
   }
 }

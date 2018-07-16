@@ -6,6 +6,9 @@
 \usage{
 is.cluster(x)
 }
+\arguments{
+\item{x}{Dataframe}
+}
 \value{
 TRUE if cluster in data frame otherwise FALSE
 }

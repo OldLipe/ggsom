@@ -2,14 +2,14 @@
 % Please edit documentation in R/aes_som.R
 \name{aes_som}
 \alias{aes_som}
-\title{aesthetics data of som object}
+\title{aes_som}
 \usage{
 aes_som(model_som, ...)
 }
 \arguments{
 \item{model_som}{object of self-organising maps (SOMs) package}
 
-\item{cutree_values}{numbers of divisions per grid}
+\item{...}{list of paramters}
 }
 \value{
 Model data that is used in plots

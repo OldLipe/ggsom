@@ -4,7 +4,7 @@ Title: ggsom
 Version: 0.1.0
 Authors@R: c(person("Felipe","Carvalho", role=c("aut","cre"), email="felipe.carvalho@inpe.com"),
   person("Rafael", "Santos", role = "ctb", email="rafael.santos@inpe.br"))
-Description: Visualization for SOMs object
+Description: Visualization for SOMs object.
 License: MIT + file LICENSE
 LazyData: true
 Encoding: UTF-8
@@ -22,3 +22,11 @@ VignetBuilder: knitr
 URL: https://github.com/oldlipe/ggsom
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
+Collate: 
+    'utils.R'
+    'aes_som.R'
+    'ggsom.R'
+    'ggsom_line.R'
+    'ggsom_rect.R'
+    'ggsom_ribbon.R'
+    'zzz.R'

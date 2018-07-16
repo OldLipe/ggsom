@@ -1,16 +1,21 @@
+#' aes_som
+#'
 #' aesthetics data of som object
 #
 #' @param model_som object of self-organising maps (SOMs) package
 #'
-#' @param cutree_values numbers of divisions per grid
+#' @param ... list of paramters
 #'
 #' @import tidyverse
+#' @import dplyr
+#' @import ggplot2
+#' @import tidyr
+#'
+#' @importFrom stats cutree dist hclust
+#'
+#' @include utils.R
 #'
 #' @import kohonen
-#'
-#' @import dplyr
-#'
-#' @import tidyr
 #'
 #' @return Model data that is used in plots
 aes_som <- function(model_som, ...) {
@@ -36,15 +41,25 @@ aes_som <- function(model_som, ...) {
   # Set 0 to NA values
   model_som_pts$sum <- tidyr::replace_na(model_som_pts$sum, 0)
 
+
   if ("%|CUTREE|%"(params)) {
     # Using hierarchical clustering as a cluster analysis method
     model_som_pts$cluster <-
       cutree(hclust(dist(model_som$codes[[1]])), params$cutree_value)
+
+    model_result <-
+      dplyr::left_join(model_som_values, model_som_pts, by = "unit.class") %>%
+      gather(var, values, -id, -unit.class, -cluster, -sum, -x, -y)
+
+    return(model_result)
   }
+
 
   model_result <-
     dplyr::left_join(model_som_values, model_som_pts, by = "unit.class") %>%
-    gather_model()
+    gather(var,
+           values, -id, -unit.class, -sum, -x, -y)
+
 
 }
 
@@ -77,25 +92,25 @@ sum_unit_class <- function(model_som_values) {
 #'
 #' @param model_result Data.frame
 #'
-gather_model <- function(model_result) {
-  if ("%|CLUSTER|%"(model_result)) {
-    tidyr::gather(model_result,
-                  var,
-                  values,
-                  -id,
-                  -unit.class,
-                  -cluster,
-                  -sum,
-                  -x,
-                  -y)
-  } else {
-    tidyr::gather(model_result,
-                  var,
-                  values,
-                  -id,
-                  -unit.class,
-                  -sum,
-                  -x,
-                  -y)
-  }
-}
+# gather_model <- function(model_result) {
+#   if ("%|CLUSTER|%"(model_result)) {
+#     tidyr::gather(model_result,
+#                   var,
+#                   values,
+#                   -id,
+#                   -unit.class,
+#                   -cluster,
+#                   -sum,
+#                   -x,
+#                   -y)
+#   } else {
+#     tidyr::gather(model_result,
+#                   var,
+#                   values,
+#                   -id,
+#                   -unit.class,
+#                   -sum,
+#                   -x,
+#                   -y)
+#   }
+# }
