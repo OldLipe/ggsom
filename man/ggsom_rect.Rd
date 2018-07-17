@@ -24,7 +24,7 @@ library(ggthemes)
 library(ggsom)
 library(ggplot2)
 
-iris_som <- som(scale(iris[1:4]), grid = somgrid(6, 4, "rectangular"))
+iris_som <- som(scale(iris[1:4]), grid = somgrid(6, 4, 'rectangular'))
 
 ggsom_rect(aes_som(iris_som, cutree_value = 3), TRUE)
 

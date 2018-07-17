@@ -17,7 +17,7 @@
 #' library(ggsom)
 #' library(ggplot2)
 #'
-#' iris_som <- som(scale(iris[1:4]), grid = somgrid(6, 4, "rectangular"))
+#' iris_som <- som(scale(iris[1:4]), grid = somgrid(6, 4, 'rectangular'))
 #'
 #' ggsom_line(aes_som(iris_som), TRUE)
 #' }
@@ -30,9 +30,13 @@ ggsom_line <- function(aes_som, color) {
     geom_line() +
     geom_point() +
     facet_grid(aes_som$y ~ aes_som$x) +
-    geom_text(aes(y = aes_som$y, x = aes_som$x, label = aes_som$sum), x = 3.0, y = 4.8) +
-    theme_base() +
-    theme(
+    geom_text(aes(
+      y = aes_som$y,
+      x = aes_som$x,
+      label = aes_som$sum
+    ),
+    x = 3,
+    y = 4.8) + theme_base() + theme(
       strip.background = element_blank(),
       strip.text = element_blank(),
       legend.position = "none",
@@ -41,6 +45,5 @@ ggsom_line <- function(aes_som, color) {
       axis.ticks = element_blank()
     )
 }
-
 
 
