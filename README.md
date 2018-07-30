@@ -6,13 +6,14 @@ ggplot extension to visualize Soms data
 
 ## Installing Requirements
 ```r
-
 # Easiest way to install this package
 devtools::install_github("oldlipe/ggsom")
 
+# Or using CRAN repository
+install.packages("ggsom")
+
 # Functions to train self-organising maps (SOMs)
 install.packages("kohonen")
-
 
 # The easiest way to get ggplot2 and dplyr is to install the whole tidyverse:
 install.packages("tidyverse")
@@ -26,7 +27,6 @@ install.packages("ggthemes")
 library (RCurl)
 
 NBA <- read.csv(text = getURL("https://raw.githubusercontent.com/clarkdatalabs/soms/master/NBA_2016_player_stats_cleaned.csv"), sep = ",", header = T, check.names = FALSE) 
-
 
 # Chosing columns
 NBA.measures1 = c("FTA", "2PA", "3PA")
@@ -60,9 +60,7 @@ nba.som <- som(scale(NBA[NBA.measures1]), grid = somgrid(6, 4, "rectangular"))
 
 ```r
   # Division grid per colors 
-  ggsom_ribbon(aes_som(nba.som, 4), TRUE)
-  
-
+  ggsom_ribbon(aes_som(nba.som, cutree_value=4), TRUE)
 ```
 ![](img/ggsom_ribbon.jpeg)
 
