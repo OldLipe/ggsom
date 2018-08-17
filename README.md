@@ -26,7 +26,7 @@ install.packages("ggthemes")
 ## Example of SOMs object
 
 ```r
-library (RCurl)
+library(RCurl)
 
 NBA <- read.csv(text = getURL("https://raw.githubusercontent.com/clarkdatalabs/soms/master/NBA_2016_player_stats_cleaned.csv"), sep = ",", header = T, check.names = FALSE) 
 
