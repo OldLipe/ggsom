@@ -66,13 +66,12 @@ nba.som <- som(scale(NBA[NBA.measures1]), grid = somgrid(6, 4, "rectangular"))
 ```
 ![](img/ggsom_ribbon.jpeg)
 
-
-
-
 ## TODO
 - [x] Add factor plot
 - [ ] Add a self-adjust marker per grid 
 
+## Acknowledgments
+- Rafael Santos
 
 
 
