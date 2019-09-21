@@ -1,7 +1,7 @@
 Package: ggsom
 Type: Package
 Title: ggsom
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: c(person("Felipe","Carvalho", role=c("aut","cre"), email="lipecaso@gmail.com"),
   person("Rafael", "Santos", role = "ctb", email="rafael.santos@inpe.br"))
 Description: Time series visualization of SOMs object

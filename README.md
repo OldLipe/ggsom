@@ -4,7 +4,7 @@
 
 
 # ggsom
-ggplot extension to visualize Soms data
+ggplot extension to visualize time series SOMs object
 
 ## Installing Requirements
 ```r
