@@ -1,10 +1,10 @@
 Package: ggsom
 Type: Package
 Title: ggsom
-Version: 0.1.0
-Authors@R: c(person("Felipe","Carvalho", role=c("aut","cre"), email="felipe.carvalho@inpe.com"),
+Version: 0.2.0
+Authors@R: c(person("Felipe","Carvalho", role=c("aut","cre"), email="lipecaso@gmail.com"),
   person("Rafael", "Santos", role = "ctb", email="rafael.santos@inpe.br"))
-Description: Visualization for SOMs object.
+Description: Time series visualization of SOMs object
 License: MIT + file LICENSE
 LazyData: true
 Encoding: UTF-8
@@ -13,20 +13,18 @@ Imports: tidyverse,
     kohonen,
     ggthemes,
     ggplot2,
-    dplyr,
-    tidyr
+    assertthat
 Suggests: RCurl,
     knitr,
     rmarkdown
 VignetBuilder: knitr
 URL: https://github.com/oldlipe/ggsom
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 VignetteBuilder: knitr
 Collate: 
-    'utils.R'
-    'aes_som.R'
     'ggsom.R'
-    'ggsom_line.R'
-    'ggsom_rect.R'
-    'ggsom_ribbon.R'
+    'ggsom_aes.R'
+    'ggsom_ts.R'
+    'ggsom_utils.R'
     'zzz.R'
+    
