@@ -2,24 +2,23 @@
 % Please edit documentation in R/ggsom_aes.R
 \name{ggsom_aes}
 \alias{ggsom_aes}
-\title{aesthetics data of som object}
+\title{kohonen package object modeling}
 \usage{
-ggsom_aes(model_som, class)
+ggsom_aes(object_som, class)
 }
 \arguments{
-\item{model_som}{object of self-organising maps (SOMs) - Kohonen package}
+\item{object_som}{object of kohonen package}
 
-\item{class}{categorical attribute with dataset classes}
+\item{class}{categorical vector corresponding to the class of the dataset}
 }
 \value{
-Model data that is used in plots
+data.table model used in visualizations
 }
 \description{
-Function to join categorical classes and mapping each neuron of SOM
+Function to map each SOM neuron with its corresponding class
 }
 \references{
-`Kohonen`package (https://CRAN.R-project.org/package=kohonen) and
-`sits` package (https://CRAN.R-project.org/package=sits)
+`Kohonen`package (https://CRAN.R-project.org/package=kohonen)
 }
 \author{
 Felipe Carvalho, \email{lipecaso@gmail.com}

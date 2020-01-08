@@ -1,11 +1,11 @@
-#' ggsom plots
+#' ggsom
 #'
-#' The goal of this packages is to improve plots of kohonen package
+#' The aim of this package is to offer more variability in the neural network
+#' graphics of self-organizing maps based on the kohonen package
 #'
 #' @name ggsom
 #' @docType package
-#' @import ggplot2
-#' @import tidyverse
-#' @import kohonen
-#' @import ggthemes
+#' @importFrom magrittr %>%
+#' @importFrom data.table data.table
+#' @importFrom entropy entropy
 NULL

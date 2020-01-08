@@ -2,18 +2,18 @@
 % Please edit documentation in R/ggsom_utils.R
 \name{is.kohonen}
 \alias{is.kohonen}
-\title{Verify if objects inherits kohonen object}
+\title{verifies that the object inherits kohonen object}
 \usage{
-is.kohonen(data)
+is.kohonen(object_som)
 }
 \arguments{
-\item{data}{Boolean type to generate plot of timeseries}
+\item{object_som}{object of Kohonen package}
 }
 \value{
 Boolean value
 }
 \description{
-if object inherits kohonen class return TRUE otherwise stop
+if object inherits kohonen class return TRUE otherwise FALSE
 }
 \references{
 `Kohonen`package (https://CRAN.R-project.org/package=kohonen)

@@ -3,8 +3,8 @@
 \docType{package}
 \name{ggsom}
 \alias{ggsom}
-\alias{ggsom-package}
-\title{ggsom plots}
+\title{ggsom}
 \description{
-The goal of this packages is to improve plots of kohonen package
+The aim of this package is to offer more variability in the neural network
+graphics of self-organizing maps based on the kohonen package
 }
