@@ -37,8 +37,8 @@ iris_som <- kohonen::som(X = as.matrix(iris[1:4]),
 
 # Creating ggsom class plot
 geom_class(iris_som, class = iris$Species,
-           x_o = 3, y_o = 5.5,
-           x_e = 3, y_e = 6.5)
+           x_o = 1, y_o = 6,
+           x_e = 1.1, y_e = 7.4)
 }
 }
 \references{

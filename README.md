@@ -4,7 +4,8 @@
 
 
 # ggsom
-ggplot extension to visualize time series SOMs object
+The aim of this package is to offer more variability of graphics based on the self-organizing maps
+
 
 ## Installing Requirements
 ```r
@@ -17,58 +18,56 @@ install.packages("ggsom")
 # Functions to train self-organising maps (SOMs)
 install.packages("kohonen")
 
-# The easiest way to get ggplot2 and dplyr is to install the whole tidyverse:
-install.packages("tidyverse")
-
-# Themes for ggplot2
-install.packages("ggthemes")
+# The easiest way to get ggplot2:
+install.packages("ggplot2")
 ```
-## Example of SOMs object
+## Exemplo básico de uso da ferramenta `ggsom`
 
 ```r
-library(RCurl)
+# ggplot2 package import
+library(ggplot2) 
 
-NBA <- read.csv(text = getURL("https://raw.githubusercontent.com/clarkdatalabs/soms/master/NBA_2016_player_stats_cleaned.csv"), sep = ",", header = T, check.names = FALSE) 
+# use iris dataset
+data(iris)
 
-# Chosing columns
-NBA.measures1 = c("FTA", "2PA", "3PA")
+# Creation SOM - 5x5
+iris_som <- kohonen::som(X = as.matrix(iris[1:4]),
+                        grid =  kohonen::somgrid(xdim = 5,
+                                                 ydim = 5,
+                                                 neighbourhood.fct = "gaussian",
+                                                 topo = "rectangular"),
+                        rlen = 100)
+                        
 
-# Defining the som model
-nba.som <- som(scale(NBA[NBA.measures1]), grid = somgrid(6, 4, "rectangular"))
 
+# Using the ggsom package
+ggsom::geom_class(iris_som, class = iris$Species,
+                  x_o = 1, y_o = 5.8, x_e = 1.1, y_e = 7.4)
+```
+![](img/iris_default.png)
+
+
+## Example of customization 
 
 ```
-- Full code can be found [here](https://clarkdatalabs.github.io/soms/SOM_NBA)
+library(cowplot) # themes ggplot2
+theme_set(theme_cowplot())
 
-
-## Examples of ggsom_line
-
-```r
-  # Set FALSE for a colorless chart
-  ggsom_line(aes_som(nba.som), FALSE)
+# Using the ggsom package
+ggsom::geom_class(iris_som, class = iris$Species,
+                  x_o = 1, y_o = 5.8, x_e = 1.1, y_e = 7.4) +
+  labs(x = "Attributes", y = "Values", title = "ggsom plot",
+       caption = "Source: Felipe")  +
+  scale_color_manual(name = "Classes",
+                     labels = c("setosa", "versicolor", "virginica"),
+                     values = c("#ffd319", "#005500", "#ff0000")) +
+  background_grid(minor = 'none') +
+  panel_border()
 
 ```
-![](img/ggsom_line_colorless.jpeg)
 
-```r
-  # TRUE for a color chart
-  ggsom_line(aes_som(nba.som), TRUE)
-```
-![](img/ggsom_line_color.jpeg)
+![](img/iris_custom.png)
 
-
-
-## Examples of division clusters plots
-
-```r
-  # Division grid per colors 
-  ggsom_ribbon(aes_som(nba.som, cutree_value=4), TRUE)
-```
-![](img/ggsom_ribbon.jpeg)
-
-## TODO
-- [x] Add factor plot
-- [ ] Add a self-adjust marker per grid 
 
 ## Acknowledgments
 - Rafael Santos

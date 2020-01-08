@@ -30,8 +30,8 @@
 #'
 #' # Creating ggsom class plot
 #' geom_class(iris_som, class = iris$Species,
-#'            x_o = 3, y_o = 5.5,
-#'            x_e = 3, y_e = 6.5)
+#'            x_o = 1, y_o = 6,
+#'            x_e = 1.1, y_e = 7.4)
 #' }
 geom_class <- function(object_som,
                      class = NULL,
@@ -42,7 +42,8 @@ geom_class <- function(object_som,
 
 
   assertthat::assert_that(!is.null(class),
-                          msg = "geom_class: ")
+                          msg = "geom_class: you should pass a vector
+                          corresponding to the classes of your dataset.")
 
   # Criação do conjunto de dados
   ggsom_model <- ggsom_aes(object_som = object_som, class = class) %>%
@@ -51,7 +52,7 @@ geom_class <- function(object_som,
     ggsom_entropy()
 
   # ggsom plot
-  ggplot2::ggplot(ggsom_model, aes(x = feature, y = values, group = id, color = class)) +
+  ggsom_graph <- ggplot2::ggplot(ggsom_model, aes(x = feature, y = values, group = id, color = class)) +
     geom_line(size=0.55) +
     facet_grid(y ~ x, labeller=label_parsed) +
     theme(plot.title = element_text(hjust= 0.5,
@@ -59,8 +60,8 @@ geom_class <- function(object_som,
           axis.text.x = element_text(angle = 90)) +
     guides(colour = guide_legend(override.aes = list(size = 2))) +
     geom_text(aes(
-      y = y_n,
-      x = x_n,
+      y = y_o,
+      x = x_o,
       label = paste("N:", sum)), check_overlap = TRUE,
       show.legend = FALSE,
       colour="black", size = 4.0) +
@@ -71,12 +72,7 @@ geom_class <- function(object_som,
       show.legend = FALSE,
       colour="black",
       size = 3.8)
+
+  return(ggsom_graph)
 }
-
-
-
-
-
-
-
 

@@ -2,7 +2,7 @@
 #' @name ggsom_entropy
 #' @author Felipe Carvalho, \email{felipe.carvalho@@inpe.br}
 #'
-#' @importFrom dplyr select group_by summarise mutate right_join everything
+#' @importFrom dplyr select group_by summarise mutate right_join everything n
 #' @importFrom tidyr gather spread
 #'
 #' @description Entropy calculation using the maximum likelihood method
@@ -16,7 +16,7 @@ ggsom_entropy <- function(ggsom_aes){
   sum_values <- ggsom_aes %>%
     dplyr::select(x,y, class, id, sum) %>%
     dplyr::group_by(x,y,class) %>%
-    dplyr::summarise(a = n()/length(unique(ggsom_aes$atributo))) %>%
+    dplyr::summarise(a = n()/length(unique(ggsom_aes$feature))) %>%
     tidyr::spread(class, a) %>%
     tidyr::gather(classe, valores, -x, -y) %>%
     dplyr::mutate(valores = tidyr::replace_na(valores,0),
