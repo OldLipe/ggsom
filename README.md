@@ -21,7 +21,7 @@ install.packages("kohonen")
 # The easiest way to get ggplot2:
 install.packages("ggplot2")
 ```
-## Exemplo básico de uso da ferramenta `ggsom`
+## Basic example of using the `ggsom' package
 
 ```r
 # ggplot2 package import
@@ -49,7 +49,7 @@ ggsom::geom_class(iris_som, class = iris$Species,
 
 ## Example of customization 
 
-```
+```r
 library(cowplot) # themes ggplot2
 theme_set(theme_cowplot())
 
