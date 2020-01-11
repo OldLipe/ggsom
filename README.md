@@ -21,7 +21,7 @@ install.packages("kohonen")
 # The easiest way to get ggplot2:
 install.packages("ggplot2")
 ```
-## Basic example of using the `ggsom' package
+## Basic example of using the `ggsom` package
 
 ```r
 # ggplot2 package import
