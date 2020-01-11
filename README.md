@@ -3,7 +3,7 @@
 [![Downloads](http://cranlogs.r-pkg.org/badges/ggsom?color=brightgreen)](http://www.r-pkg.org/pkg/ggsom)
 
 
-# ggsom
+# ggsom <img src="img/logo.png" align="right" width="120" />
 The aim of this package is to offer more variability of graphics based on the self-organizing maps
 
 
