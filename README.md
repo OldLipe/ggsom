@@ -39,6 +39,7 @@ iris_som <- kohonen::som(X = as.matrix(iris[1:4]),
                         rlen = 100)
                         
 
+In the upper left corner of each neuron is shown the number of observations associated with each neuron (N) and its respective purity measured by entropy (E).
 
 # Using the ggsom package
 ggsom::geom_class(iris_som, class = iris$Species,
