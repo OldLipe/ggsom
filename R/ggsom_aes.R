@@ -34,3 +34,25 @@ ggsom_aes <- function(object_som, class) {
   return(model_som_values)
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
