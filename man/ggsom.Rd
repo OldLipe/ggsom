@@ -5,6 +5,6 @@
 \alias{ggsom}
 \title{ggsom}
 \description{
-The aim of this package is to offer more variability in the neural network
-graphics of self-organizing maps based on the kohonen package
+The aim of this package is to offer more variability of graphics based on the
+self-organizing maps
 }

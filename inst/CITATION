@@ -1,0 +1,16 @@
+citHeader("To cite ggsom in publications use:")
+
+citEntry(entry = "inproceedings",
+         title        = "{GGSOM}: A SELF-ORGANIZING MAP-BASED VISUALIZATION TOOL",
+         author       = personList(as.person("Felipe Carvalho"),
+                                   as.person("Rafael Santos"),
+                                   as.person("Karine Reis")),
+         booktitle    = "XXII Encontro Nacional de Modelagem Computacional e X Encontro de Ciência e Tecnologia de Materiais",
+         year         = "2019",
+         address      = "Minas Gerais, Brazil",
+
+
+         textVersion  =
+             paste("Felipe Carvalho, Rafael Santos, Karine Reis (2019).",
+                   "GGSOM: A SELF-ORGANIZING MAP-BASED VISUALIZATION TOOL.",
+                   "In: XXII Encontro Nacional de Modelagem Computacional e X Encontro de Ciência e Tecnologia de Materiais. Minas Gerais, Brazil. 2019."))
