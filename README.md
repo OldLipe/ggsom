@@ -85,7 +85,7 @@ library(cowplot) # themes ggplot2
 theme_set(theme_cowplot())
 
 # Reading of temperature data  
-temperature_countries <- readr::read_csv("./example//GlobalLandTemperaturesByCountry.csv")
+temperature_countries <- readr::read_csv("./example/GlobalLandTemperaturesByCountry.csv")
 
 # Reading and selection of continent data
 continent <- readr::read_csv("./example/countryContinent.csv") %>%
