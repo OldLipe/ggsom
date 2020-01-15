@@ -130,9 +130,8 @@ ggsom::geom_class(som_obj, class = final_dataset$continent,
                      labels = c("Africa", "Americas", "Asia", "Europe", "Oceania"),
                      values = c("#7fc97f", "#beaed4", "#fdc086", "#ffff99", "#386cb0")) +
   background_grid(minor = 'none')
-
-
 ```
+![](img/ts_ggsom.png)
 
 
 ## Acknowledgments
