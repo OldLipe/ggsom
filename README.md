@@ -140,5 +140,13 @@ ggsom::geom_class(som_obj, class = final_dataset$continent,
 ## Acknowledgments
 - Rafael Santos
 
+## References
+
+- Kohonen, T. (1982). Self-organized formation of topologically correct feature maps. Biological cybernetics, 43(1):59–69.
+- Kohonen, T. (2013). Essentials of the self-organizing map. Neural Networks, 37:52 – 65.
+- Wehrens, R., Buydens, L. M., et al. (2007). Self-and super-organizing maps in r: the kohonen package. Journal of Statistical Software, 21(5):1–19.
+- Wickham, H. (2011). ggplot2. Wiley Interdisciplinary Reviews: Computational Statistics, 3(2):180–185.
+
+
 
 
