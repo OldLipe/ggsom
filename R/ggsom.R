@@ -9,3 +9,4 @@
 #' @importFrom data.table data.table
 #' @importFrom entropy entropy
 NULL
+

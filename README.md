@@ -72,6 +72,69 @@ ggsom::geom_class(iris_som, class = iris$Species,
 ![](img/iris_custom.png)
 
 
+## Time series example
+
+Nesse exemplo vamos utilizar dados de [mudanças climáticas da superfice de solo](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data) da plataforma [kaggle](kaggle.com/). Para definir os continentes de cada país foi utilizado esta [base de dados](https://www.kaggle.com/statchaitya/country-to-continent).
+
+```r
+library(readr)   # read rectangular data
+library(dplyr)   # data manipulation
+library(tidyr)   # functions to transform data to tidy
+library(cowplot) # themes ggplot2
+
+theme_set(theme_cowplot())
+
+# Leitura dos dados de temperatura 
+temperature_countries <- readr::read_csv("./inst/extdata/GlobalLandTemperaturesByCountry.csv")
+
+# Leitura e seleção dos dados de continente
+continent <- readr::read_csv("./inst/extdata/countryContinent.csv") %>%
+  dplyr::select(country, continent)
+  
+# Filtro a patir do ano 2000 e agregação pela média anual (not good approach)
+year_temperature <- temperature_countries %>% 
+  dplyr::group_by(Country) %>%
+  dplyr::filter(dt > "2000-01-01")  %>%
+  dplyr::mutate(dt = lubridate::year(dt)) %>%
+  dplyr::group_by(Country, dt) %>%
+  dplyr::summarise(year_mean = mean(AverageTemperature))
+  
+# Junção com os continentes pelo nome dos paises 
+final_dataset <- year_temperature %>% 
+  dplyr::rename(country = Country) %>%
+  dplyr::left_join(continent, by="country") %>%
+  dplyr::filter(!is.na(continent)) %>%
+  tidyr::pivot_wider(names_from = dt, values_from=year_mean) %>%
+  dplyr::select(-`2013`)
+
+
+# Transformando em matriz
+matrix_temperature <- final_dataset %>% dplyr::ungroup() %>%
+  dplyr::select(-country, -continent) %>% as.matrix()
+  
+
+# Criação de uma rede SOM
+som_temperature <- kohonen::som(X = matrix_temperature,
+             grid = kohonen::somgrid(xdim = 6,
+                                     ydim = 6,
+                                     neighbourhood.fct = "gaussian",
+                                     topo = "rectangular"),
+             rlen = 1000)
+             
+
+# Uso da ferramenta ggsom
+ggsom::geom_class(som_obj, class = final_dataset$continent,
+                  x_o = 2.8, y_o = 1.3, x_e = 2.8, y_e = 7.4) +
+  labs(x = "Year", y= "Temperature (C°)", title = "ggsom plot") +
+  scale_color_manual(name = "Continents",
+                     labels = c("Africa", "Americas", "Asia", "Europe", "Oceania"),
+                     values = c("#7fc97f", "#beaed4", "#fdc086", "#ffff99", "#386cb0")) +
+  background_grid(minor = 'none')
+
+
+```
+
+
 ## Acknowledgments
 - Rafael Santos
 
