@@ -85,10 +85,10 @@ library(cowplot) # themes ggplot2
 theme_set(theme_cowplot())
 
 # Reading of temperature data  
-temperature_countries <- readr::read_csv("./inst/extdata/GlobalLandTemperaturesByCountry.csv")
+temperature_countries <- readr::read_csv("./example//GlobalLandTemperaturesByCountry.csv")
 
 # Reading and selection of continent data
-continent <- readr::read_csv("./inst/extdata/countryContinent.csv") %>%
+continent <- readr::read_csv("./example/countryContinent.csv") %>%
   dplyr::select(country, continent)
   
 # Filter from year 2000 and aggregation by annual mean (not good approach)
@@ -106,7 +106,9 @@ final_dataset <- year_temperature %>%
   dplyr::filter(!is.na(continent)) %>%
   tidyr::pivot_wider(names_from = dt, values_from=year_mean) %>%
   dplyr::select(-`2013`)
-
+  
+# Write the final dataset on ext/inst (you can use it directly) 
+write.csv(final_dataset, "./inst/extdata/climate_changes_annual.csv")
 
 # Transforming into a matrix
 matrix_temperature <- final_dataset %>% dplyr::ungroup() %>%
