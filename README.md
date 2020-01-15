@@ -74,7 +74,7 @@ ggsom::geom_class(iris_som, class = iris$Species,
 
 ## Time series example
 
-Nesse exemplo vamos utilizar dados de [mudanças climáticas da superfice de solo](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data) da plataforma [kaggle](kaggle.com/). Para definir os continentes de cada país foi utilizado esta [base de dados](https://www.kaggle.com/statchaitya/country-to-continent).
+In this example we will use data from [earth surface climate change](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data) from the [kaggle](kaggle.com/) platform. To define the continents of each country this [database](https://www.kaggle.com/statchaitya/country-to-continent) was used.
 
 ```r
 library(readr)   # read rectangular data
@@ -84,14 +84,14 @@ library(cowplot) # themes ggplot2
 
 theme_set(theme_cowplot())
 
-# Leitura dos dados de temperatura 
+# Reading of temperature data  
 temperature_countries <- readr::read_csv("./inst/extdata/GlobalLandTemperaturesByCountry.csv")
 
-# Leitura e seleção dos dados de continente
+# Reading and selection of continent data
 continent <- readr::read_csv("./inst/extdata/countryContinent.csv") %>%
   dplyr::select(country, continent)
   
-# Filtro a patir do ano 2000 e agregação pela média anual (not good approach)
+# Filter from year 2000 and aggregation by annual mean (not good approach)
 year_temperature <- temperature_countries %>% 
   dplyr::group_by(Country) %>%
   dplyr::filter(dt > "2000-01-01")  %>%
@@ -99,7 +99,7 @@ year_temperature <- temperature_countries %>%
   dplyr::group_by(Country, dt) %>%
   dplyr::summarise(year_mean = mean(AverageTemperature))
   
-# Junção com os continentes pelo nome dos paises 
+# Joining the continents by the name of the countries  
 final_dataset <- year_temperature %>% 
   dplyr::rename(country = Country) %>%
   dplyr::left_join(continent, by="country") %>%
@@ -108,12 +108,12 @@ final_dataset <- year_temperature %>%
   dplyr::select(-`2013`)
 
 
-# Transformando em matriz
+# Transforming into a matrix
 matrix_temperature <- final_dataset %>% dplyr::ungroup() %>%
   dplyr::select(-country, -continent) %>% as.matrix()
   
 
-# Criação de uma rede SOM
+# Creating a SOM network
 som_temperature <- kohonen::som(X = matrix_temperature,
              grid = kohonen::somgrid(xdim = 6,
                                      ydim = 6,
@@ -122,7 +122,7 @@ som_temperature <- kohonen::som(X = matrix_temperature,
              rlen = 1000)
              
 
-# Uso da ferramenta ggsom
+# Using the ggsom tool
 ggsom::geom_class(som_obj, class = final_dataset$continent,
                   x_o = 2.8, y_o = 1.3, x_e = 2.8, y_e = 7.4) +
   labs(x = "Year", y= "Temperature (C°)", title = "ggsom plot") +
